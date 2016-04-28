@@ -13,10 +13,8 @@ $(function(){
 	form.on('submit',function(e){
 		
 		// Is everything entered correctly?
-		if($('#main .row.success').length == $('#main .row').length){
-			
-			// Yes!
-			alert("Thank you for trying out this demo!");
+		if($('#main .row.success').length != $('#main .row').length){
+			alert("密码不一致!");
 		}
 
 	});

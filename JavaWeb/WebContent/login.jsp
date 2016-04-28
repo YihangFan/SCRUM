@@ -47,7 +47,7 @@
 			<form action=login.action method="post">
 				<input type="text" name="username" value="用户名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '用户名';}" >
 				<input type="password" name="password" value="密码" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '密码';}">
-					<h2>${requestScope.LoginMessage }</h2><br />
+					<h2 style="color:red">${requestScope.LoginMessage }</h2><br />
 				<div class="signin">
 					<input type="submit" value="登陆" >
 				</div>

@@ -52,6 +52,7 @@
 					<li><a href="upload-photo.jsp">Upload Judge</a></li>
 					<li><a href="message.jsp">Message</a></li>
 					<li><a href="my-account.jsp">My account</a></li>
+					<li><a href="login.jsp">Exit!</a></li>
 				</ul>
 				<!-- script-for-menu -->
 				 <script>
@@ -77,8 +78,8 @@
 				</form>	
 			</div>
 			<div class="banner-title"> 
-				<h2>学生不该害怕老师.</h2>
-				<h3>老师应该害怕他的学生.</h3>
+				<h2>课程的好坏不取决于老师.</h2>
+				<h3>取决于学生.</h3>
 			</div>
 		</div>
 	</div>

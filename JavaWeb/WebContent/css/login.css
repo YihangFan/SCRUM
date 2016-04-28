@@ -26,10 +26,10 @@ img{max-width:100%;}
 body{
 	background: url(../images/bg1.jpg) no-repeat 0px 0px;
 	font-family: 'Open Sans', sans-serif;
-	background-size:cover;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
+	background-size:contain;
+	-webkit-background-size:contain;
+	-moz-background-size:contain;
+	-o-background-size:contain;
 	min-height:1050px;
 }
 .wrap{

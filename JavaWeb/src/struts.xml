@@ -11,6 +11,26 @@
 		<result name="loginerror">/login.jsp</result>
 		<result name="loginsuccess">/index.jsp</result>
 	</action>
+	
+	<action name="regist" class="team.javaweb.action.RegistAction" method="regist">
+		<result name="registerror">/regist.jsp</result>
+		<result name="registsuccess">/login.jsp</result>
+	</action>
 
+	<action name="info" class="team.javaweb.action.InfoAction" method="Info">
+		<result name="editerror">/my-account.jsp</result>
+		<result name="editsuccess">/my-account.jsp</result>
+	</action>
+	
+	<action name="infoedit" class="team.javaweb.action.InfoAction" method="InfoEdit">
+		<result name="editerror">/my-account.jsp</result>
+		<result name="editsuccess">/my-account.jsp</result>
+	</action>
+	
+	<action name="email" class="team.javaweb.action.EmailAction" method="sendEmail">
+		<result name="fail">/message.jsp</result>
+		<result name="success">/message.jsp</result>
+	</action>
+	
 	</package>
 </struts>

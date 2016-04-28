@@ -51,6 +51,7 @@
 					<li><a href="upload-photo.jsp" class="active">Upload Judge</a></li>
 					<li><a href="message.jsp" >Message</a></li>
 					<li><a href="my-account.jsp">My account</a></li>
+					<li><a href="login.jsp">Exit!</a></li>
 				</ul>
 				<!-- script-for-menu -->
 				 <script>

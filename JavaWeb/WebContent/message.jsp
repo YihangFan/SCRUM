@@ -52,6 +52,7 @@
 					<li><a href="upload-photo.jsp">Upload Judge</a></li>
 					<li><a href="message.jsp" class="active">Message</a></li>
 					<li><a href="my-account.jsp">My account</a></li>
+					<li><a href="login.jsp">Exit!</a></li>
 				</ul>
 				<!-- script-for-menu -->
 				 <script>
@@ -71,13 +72,14 @@
 	<div class="contact-form">
 		<div class="container">	
 			<div class="col-md-7 message">
-				<h3>Message To Us</h3>
+				<h3>Message To Us</h3><h4>
 				<p>send an email.All fields with an * are required</p>
-				<form>
-					<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-					<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-					<input type="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}" required="">
-					<textarea type="text" value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+				<form action="email.action">
+					<input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+					<input type="text" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<input type="text" name="Subject" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}" required="">
+					<textarea type="text" name="Message" value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+					<h4 style="color:red">${requestScope.EmailMessage }</h4>
 					<input type="submit" value="Send Email">
 				</form>
 			</div>
@@ -85,17 +87,17 @@
 				<div class="address-info">
 					<h3>Address1</h3>
 					<p>北京交通大学16号楼,</p>
-					<p>韩旺. </p>
+					<p>马汇峰. </p>
 					<p>Cellphone: +86 18811456789</p>
-					<p>E-mail:<a href="mailto:example@email.com">mail@example.com</a>
+					<p>E-mail:<a href="mailto:example@email.com">tong332489847@163.com</a>
 				</div>
 				<div class="address-info bottom">
 					<h3>Address2</h3>
 					<p>北京交通大学16号楼,</p>
-					<p>宋家成.</p>
+					<p>陈曦.</p>
 					<p>Cellphone: +86 15457856751</p>
 					<p>FAX:+1 604 8229 9898</p>
-					<p>E-mail:<a href="mailto:example@email.com">mail@example.com</a>
+					<p>E-mail:<a href="mailto:example@email.com">****@163..com</a>
 				</div>
 			</div>	
 			<div class="clearfix"> </div>

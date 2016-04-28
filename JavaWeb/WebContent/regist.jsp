@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Al3xis</title>
+        <title>注册</title>
         
         <!-- The stylesheet -->
         <link rel="stylesheet" href="css/regist.css" />
@@ -18,7 +18,7 @@
         	
         	<h1>Regist</h1>
         	
-        	<form class="" method="post" action="login.action">
+        	<form class="" method="post" action="regist.action">
         		
         		<div class="row email">
 	    			<input type="text" id="email" name="username" placeholder="Email" />
@@ -29,24 +29,21 @@
         		</div>
         		
         		<div class="row pass">
-        			<input type="password" id="password2" placeholder="Password (repeat)" disabled="true" />
+        			<input type="password" id="password2" name="password2" placeholder="Password (repeat)" disabled="true" />
         		</div>
-        		<p>
-        			${requestScope.LoginMessage }
-        		</p>
         		<!-- The rotating arrow -->
         		<div class="arrowCap"></div>
         		<div class="arrow"></div>
         		
         		<p class="meterText">Password Meter</p>
-        		
-        		<input type="submit" value="Login" />
+        		<h2 style="color:red">${requestScope.RegistMessage }</h2><br />
+        		<input type="submit" value="Regist" />
         		
         	</form>
         </div>
         
         <footer>
-            <a href="regist.jsp" class="al3xis"><u>Have Account? Login!</u></a>
+            <a href="login.jsp" class="al3xis"><u>Have Account? Login!</u></a>
         </footer>
         
         <!-- JavaScript includes - jQuery, the complexify plugin and our own script.js -->

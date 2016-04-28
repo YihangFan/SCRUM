@@ -8,7 +8,6 @@ import com.opensymphony.xwork2.ActionSupport;
 
 import team.javaweb.service.Login;
 
-
 public class LoginAction extends ActionSupport{
 	
 	private String username;
@@ -39,20 +38,26 @@ public class LoginAction extends ActionSupport{
 		System.out.println(username);
 		System.out.println(password);
 		
-		Login log = new Login();
+		if(!username.isEmpty() && !password.isEmpty()){
+		
+			Login log = new Login();
 				
-		List list = log.login(getUsername(),getPassword());
+			List list = log.login(getUsername(),getPassword());
 				
-		if(!list.isEmpty()){
+			if(!list.isEmpty()){
 					
-			HttpSession session = ServletActionContext.getRequest().getSession();
-					
-			session.setAttribute("loginmessage","登陆成功!");
-				
-			result = "loginsuccess";
+				HttpSession session = ServletActionContext.getRequest().getSession();
+
+				session.setAttribute("User",username);
+			
+				result = "loginsuccess";
+			}else{
+				ActionContext.getContext().put("LoginMessage","用户名密码错误!");
+			}
 		}else{
-			ActionContext.getContext().put("LoginMessage","用户名密码错误!");
+			ActionContext.getContext().put("LoginMessage","用户名密码不能为空!");
 		}
+		
 		return result;
 	}
 }
