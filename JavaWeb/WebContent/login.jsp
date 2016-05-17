@@ -28,9 +28,7 @@
 	</script>
 	<center>
 	<br /><br />
-        <button onclick="window.location.href='regist.jsp'">注册</button>
-    </div>
-	
+        <img src="images/register.gif" style="cursor:pointer" onclick="window.location.href='regist.jsp'"/>
 	<br /><br /><br />
 	
 	<div class="login-form">

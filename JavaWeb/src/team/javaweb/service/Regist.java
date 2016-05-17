@@ -19,7 +19,7 @@ public class Regist {
 		public String regist(String username,String password){
 			String check = "select * from user where username = '"+username+"'";
 			List list = session.createSQLQuery(check).list();
-			
+			System.out.println(username+" "+password);
 			if(list.isEmpty()){
 				String sql = "insert user(username,password) values('"+username+"','"+password+"')";
 				session.createSQLQuery(sql).executeUpdate();

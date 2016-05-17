@@ -79,16 +79,16 @@
 	<div class="header">
 		<div class="container">
 			<div class="header-logo">
-				<a href="index.html"><h1>BJudge</h1></a>
+				<a href="index.jsp"><h1>BJudge</h1></a>
 			</div>
 			<div class="top-nav">
 				<span class="menu"> </span>
 				<ul class="nav1">
-					<li><a href="index.jsp">Home</a></li>
-					<li><a href="upload-photo.jsp">Upload Judge</a></li>
-					<li><a href="message.jsp" >Message</a></li>
-					<li><a href="my-account.jsp" class="active">My account</a></li>
-					<li><a href="login.jsp">Exit!</a></li>
+					<li><a href="index.jsp">主页</a></li>
+					<li><a href="upload.jsp">上传评价</a></li>
+					<li><a href="message.jsp" >联系我们</a></li>
+					<li><a href="my-account.jsp" class="active">我的信息</a></li>
+					<li><a href="login.jsp">退出</a></li>
 				</ul>
 				<!-- script-for-menu -->
 				 <script>
@@ -105,16 +105,16 @@
 	</div>
 	<!--//header-->
 	<%	EditInfo edit = new EditInfo();
-		edit.queryInfo(); %>
+		edit.queryInfo((String)session.getAttribute("User")); %>
 	<div class="login">
 		<div class="container">
-			<div class="col-md-6 register">
+			<div class="Information">
 				<h3>Complete Your Info</h3><br />
 				
 				<form action="info.action?username=<%=	(String)session.getAttribute("User")	%>" method="post">
 					<table>
 					<tr>
-					<td height="93px">
+					<td width="80px">
 					<lable>Name :</lable>
 					</td>
 					<td>
@@ -125,7 +125,7 @@
 					</tr>
 					
 					<tr>
-					<td height="93px">
+					<td width="80px">
 					<br /><lable>Sex :</lable>
 					</td>
 					<td>
@@ -139,7 +139,7 @@
 					</tr>
 					
 					<tr>
-					<td height="93px">
+					<td width="80px">
 					<br /><lable>School :</lable>
 					</td>
 					<td>
@@ -150,7 +150,7 @@
 					</tr>
 					
 					<tr>
-					<td height="93px">
+					<td width="80px">
 					<br /><lable>Major :</lable>
 					</td>
 					<td>
@@ -161,7 +161,7 @@
 					</tr>
 					
 					<tr>
-					<td height="93px">
+					<td width="80px">
 					<br /><lable>Student ID (6-15数字):</lable>
 					</td>
 					<td>
@@ -172,7 +172,7 @@
 					</tr>
 					
 					<tr>
-					<td height="93px">
+					<td width="80px">
 					<br /><lable>Phone Number (6-15数字) :</lable>
 					</td>
 					<td>
@@ -183,7 +183,7 @@
 					</tr>
 					
 					<tr>
-					<td height="93px">
+					<td width="80px">
 					<br /><lable>Birthplace :</lable>
 					</td>
 					<td>
@@ -204,13 +204,11 @@
 					</table>
 				</form>
 			</div>
-			<div class="col-md-6 register">
+			<div class="loginInformation">
 				<h3>Login Information</h3>
 				<form action="infoedit.action?username=<%=	(String)session.getAttribute("User")	%>" method="post">
-					<lable>LoginName :</lable>
-					<input type="text" required="" name="LoginName">
 					<lable>Password :</lable>
-					<input type="password" name="Password" value="">
+					<input type="password" name="Password" value="" width="200px">
 					<h4 style="color:red">${requestScope.EditLoginMessage }</h4><br />
 					<input type="submit" value="Submit">
 				</form>

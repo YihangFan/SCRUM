@@ -13,8 +13,8 @@ $(function(){
 	form.on('submit',function(e){
 		
 		// Is everything entered correctly?
-		if($('#main .row.success').length != $('#main .row').length){
-			alert("密码不一致!");
+		if($('#main .row.success').length == $('#main .row').length){
+			alert("注册成功!");
 		}
 
 	});

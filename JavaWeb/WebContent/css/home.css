@@ -1,0 +1,76 @@
+body,div {padding:0;margin:0;}
+.div1 {width:1515px;overflow:hidden;zoom:1;}
+.div2 {width:1515px;height:120px;float:left;}
+.div3 {width:1515px;height:70px;float:left;}
+.div4 {width:1515px;height:600px;margin-top:90px;}
+
+.div3  .search{
+	margin-right:2px;
+	margin-top:85px;
+	background:#00BBFF;
+	width:250px;
+}
+.div3  .search input[type="text"]{
+	padding: .5em;
+	border: 1px solid #FFA042;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: 100;
+	position:relative;
+	margin-top:2px;
+	margin-left:8px;
+	width: 180px;
+	background: none;
+}
+.div3  .search input[type="submit"]{
+	background: url(../images/search-icon.png)no-repeat 0px 0px;
+	border: none;
+	margin-top:5px;
+	width: 18px;
+	outline:none;
+}
+
+.div4 .anniu .leftbut{
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	top: 45%;
+	left: 10px;
+	background:url(icons.png) no-repeat 0 0;
+	cursor: pointer;
+}
+.div4 .anniu .rightbut{
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	top: 46%;
+	right: 10px;
+	background:url(icons.png) no-repeat 0 -45px;
+	cursor: pointer;
+}
+.div4 .maonimen{
+	margin-top:-20px;
+	-webkit-perspective:600px;
+}
+.div4 .maonimen p{
+	position: absolute;
+	width: 72%;
+	height: 360px;
+	background-image:url(0.jpg);
+	font-size: 20px;
+}
+.div4 .maonimen.fei p{
+	opacity: 0;
+}
+.div4 .maonimen.fei p:nth-child(1){-webkit-transform:rotateX(30deg) rotateY(10deg) translateZ(400px);}
+.div4 .maonimen.fei p:nth-child(2){-webkit-transform:rotateX(330deg) rotateY(10deg) translateZ(400px);}
+.div4 .maonimen.fei p:nth-child(3){-webkit-transform:rotateX(3450deg) rotateY(10deg) translateZ(400px);}
+.div4 .maonimen.fei p:nth-child(4){-webkit-transform:rotateX(-30deg) rotateY(-10deg) translateZ(400px);}
+.div4 .maonimen.fei p:nth-child(5){-webkit-transform:rotateX(330deg) rotateY(10deg) translateZ(400px);}
+.div4 .maonimen.fei p:nth-child(6){-webkit-transform:rotateX(40deg) rotateY(20deg) translateZ(400px);}
+.div4 .maonimen.fei p:nth-child(7){-webkit-transform:rotateX(340deg) rotateY(10deg) translateZ(400px);}
+.div4 .maonimen.fei p:nth-child(8){-webkit-transform:rotateX(3450deg) rotateY(60deg) translateZ(400px);}
+.div4 .maonimen.fei p:nth-child(9){-webkit-transform:rotateX(230deg) rotateY(10deg) translateZ(400px);}
+.div4 .maonimen.fei p:nth-child(10){-webkit-transform:rotateX(20deg) rotateY(20deg) translateZ(400px);}
+.div4 .maonimen.fei p:nth-child(11){-webkit-transform:rotateX(30deg) rotateY(10deg) translateZ(400px);}
+.div4 .maonimen.fei p:nth-child(12){-webkit-transform:rotateX(10deg) rotateY(10deg) translateZ(400px);}

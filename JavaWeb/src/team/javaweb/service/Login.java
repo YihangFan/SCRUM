@@ -15,7 +15,7 @@ public class Login {
 		//µÇÂ½·½·¨
 		public List login(String username,String password){
 	
-			String sql = "select * from user where username = '"+username+"' or LoginName='"+username+"' and password='"+password+"'";
+			String sql = "select * from user where username = '"+username+"' and password='"+password+"'";
 			List list = session.createSQLQuery(sql).list();
 			session.getTransaction().commit();
 			return list;

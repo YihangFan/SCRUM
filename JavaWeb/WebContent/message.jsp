@@ -43,16 +43,16 @@
 	<div class="header">
 		<div class="container">
 			<div class="header-logo">
-				<a href="index.html"><h1>BJudge</h1></a>
+				<a href="index.jsp"><h1>BJudge</h1></a>
 			</div>
 			<div class="top-nav">
 				<span class="menu"> </span>
 				<ul class="nav1">
-					<li><a href="index.jsp">Home</a></li>
-					<li><a href="upload-photo.jsp">Upload Judge</a></li>
-					<li><a href="message.jsp" class="active">Message</a></li>
-					<li><a href="my-account.jsp">My account</a></li>
-					<li><a href="login.jsp">Exit!</a></li>
+					<li><a href="index.jsp">主页</a></li>
+					<li><a href="upload.jsp">上传评价</a></li>
+					<li><a href="message.jsp" class="active">联系我们</a></li>
+					<li><a href="my-account.jsp">我的信息</a></li>
+					<li><a href="login.jsp">退出</a></li>
 				</ul>
 				<!-- script-for-menu -->
 				 <script>

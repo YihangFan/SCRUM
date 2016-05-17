@@ -3,6 +3,20 @@ body{
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
 }
+.tstyle{
+	text-align:center;
+}
+table{
+	width:600px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:1px;
+}
+table td{
+	border-top:2px solid gray;
+	width:200px;
+	height:40px;
+}
 .header-logo{
 	float:left;
 	width: 13%;
@@ -919,3 +933,4 @@ span.menu {
 	font-size: 14px;
 }
 }
+

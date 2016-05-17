@@ -122,6 +122,18 @@ public class InfoAction extends ActionSupport{
 		else
 			return false;
 	}
+	public boolean checkPass(String password){
+		
+		String p = "^[a-zA-z0-9]{6,12}$";
+				
+		boolean m = password.matches(p);
+				
+		if(m){
+			return true;
+		}
+		else
+			return false;
+	}
 	public boolean checkStr(String str){
 	
 		String p = "^[a-zA-Z0-9\u4e00-\u9fa5]{2,15}$";
@@ -173,11 +185,11 @@ public class InfoAction extends ActionSupport{
 		
 		String result = "editerror";
 		
-		if(check(LoginName,Password)){
+		if(checkPass(Password)){
 			
 			EditInfo edit = new EditInfo();
 			
-			if(edit.editInfo(Username,LoginName,Password)=="yes"){
+			if(edit.editInfo(Username,Password)=="yes"){
 			
 				ActionContext.getContext().put("EditLoginMessage","ÐÞ¸Ä³É¹¦!");
 			

@@ -32,5 +32,15 @@
 		<result name="success">/message.jsp</result>
 	</action>
 	
+	<action name="judge" class="team.javaweb.action.UploadAction" method="uploadJudge">
+		<result name="fail">/upload.jsp</result>
+		<result name="success">/upload.jsp</result>
+	</action>
+	
+	<action name="searchComments" class="team.javaweb.action.CommentAction" method="openComment">
+		<result name="fail">/comment.jsp</result>
+		<result name="success">/comment.jsp</result>
+	</action>
+	
 	</package>
 </struts>

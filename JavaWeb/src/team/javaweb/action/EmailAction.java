@@ -85,7 +85,7 @@ public class EmailAction extends ActionSupport{
 				result = "fail";
 				ActionContext.getContext().put("EmailMessage","发送失败!");
 			}else{
-				ActionContext.getContext().put("EmailMessage","发送失败!");
+				ActionContext.getContext().put("EmailMessage","发送成功!");
 				result = "success";
 			}
 		}else if(!checkEmail(Email)){
